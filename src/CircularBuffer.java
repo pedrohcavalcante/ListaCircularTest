@@ -9,11 +9,27 @@ public class CircularBuffer {
 	}
 	
 	public boolean isEmpty() {
-		if (no == null) {
+		if (contador == 0) {
 			return true;
 		}else {
 			return false;
 		}
+	}
+	
+	public boolean isFull() {
+		if (contador == 0) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+	
+	public void put(int valor) {
+		contador++;
+	}
+	
+	public void get() {
+	
 	}
 
 }

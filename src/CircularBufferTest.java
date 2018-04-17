@@ -80,24 +80,21 @@ public class CircularBufferTest extends TestCase {
 		assertTrue(buffer.isEmpty());
 	}
 
-//	public void testNotFullAfterCreation()
-//	{
-//		assertTrue(!buffer.isFull());
-//	}
+	public void testNotFullAfterCreation(){
+		assertTrue(!buffer.isFull());
+	}
 
-//	public void testNotEmptyAfterput()
-//	{
-//		buffer.put(10046);
-//		assertTrue(!buffer.isEmpty());
-//	}
+	public void testNotEmptyAfterput(){
+		buffer.put(10046);
+		assertTrue(!buffer.isEmpty());
+	}
 
-//	public void testNotEmptyThenEmpty()
-//	{
-//		buffer.put(4567);
-//		assertTrue(!buffer.isEmpty());
-//		buffer.get();
-//		assertTrue(buffer.isEmpty());
-//	}
+	public void testNotEmptyThenEmpty() {
+		buffer.put(4567);
+		assertTrue(!buffer.isEmpty());
+		buffer.get();
+		assertTrue(buffer.isEmpty());
+	}
 
 //	public void testGetPutOneValue()
 //	{
